@@ -1,7 +1,7 @@
 {
-    "name": "games-wabot",
-    "version": "0.9.86",
-    "description": "Customizable WhatsApp Bot",
+    "name": "CloudBot",
+    "version": "0.0.1",
+    "description": "",
     "main": "index.js",
     "type": "module",
     "directories": {
@@ -16,26 +16,18 @@
     },
     "keywords": [
         "termux-whatsapp-bot",
-        "whatsapp-bot",
-        "whatsapp",
-        "js-whatsapp",
-        "whatsapp",
-        "Games-wabot",
-        "wabot-aq",
-        "multi-device",
-        "MD",
-        "baileys-md"
+        "whatsapp-bot"
     ],
-    "homepage": "https://github.com/BochilGaming/games-wabot",
+    "homepage": "https://github.com/lordlightness/JANGAN-DI-FORK",
     "author": {
-        "name": "BochilGaming"
+        "name": "Dellas"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BochilGaming/games-wabot.git"
+        "url": "git+https://github.com/lordlightness/JANGAN-DI-FORK.git"
     },
     "bugs": {
-        "url": "https://github.com/BochilGaming/games-wabot/issues"
+        "url": "https://github.com/lordlightness/JANGAN-DI-FORK/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
