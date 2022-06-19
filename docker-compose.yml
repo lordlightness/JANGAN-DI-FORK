@@ -12,4 +12,5 @@ services:
   redis:
     image: redis
 volumes:
-  logvolume01: {}
+  logvolume01:
+    driver: local
