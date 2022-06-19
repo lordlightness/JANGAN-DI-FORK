@@ -5,7 +5,7 @@ services:
     ports:
       - "8000:5000"
     volumes:
-      - .:/code
+      - ./app:/code
       - logvolume01:/var/log
     links:
       - redis
