@@ -1,5 +1,15 @@
-version: "3"
+version: "3.9"  # optional since v1.27.0
 services:
-  bot:
-    container_name: bot
+  web:
     build: .
+    ports:
+      - "8000:5000"
+    volumes:
+      - ./app:/code
+      - logvolume01:/var/log
+    links:
+      - redis
+  redis:
+    image: redis
+volumes:
+  logvolume01: {}
