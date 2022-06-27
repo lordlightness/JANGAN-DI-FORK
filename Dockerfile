@@ -1,9 +1,7 @@
-FROM ubuntu:22.04
+FROM node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
-  nodejs \
-  npm \
   ffmpeg \
   imagemagick \
   webp && \
@@ -12,10 +10,10 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install
+RUN npm install && npm install qrcode-terminal && npm install pm2 -g 
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
