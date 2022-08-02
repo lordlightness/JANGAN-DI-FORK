@@ -12,7 +12,7 @@
     "scripts": {
         "start": "npx pm2 start npm -- run db --restart-delay=30000 && npx pm2 monit",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --noprint --autocleartmp --restrict --db 'mongodb+srv://Della:lylia9090@cloudclus1.dlgwh.mongodb.net/cloudclus1?retryWrites=true&w=majority'"
+        "db": "node . --noprint --gconly --autocleartmp --restrict --db 'mongodb+srv://Della:lylia9090@cloudclus1.dlgwh.mongodb.net/cloudclus1?retryWrites=true&w=majority'"
     },
     "keywords": [
         "termux-whatsapp-bot",
